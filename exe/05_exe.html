@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        body{
+            font-size: 12px/1.5 tahoma;
+            color: #ddd;
+            background-color: aquamarine;
+        }
+        .top_bar_wapper{
+            width: 100%;
+            background-color: #E3E4E5;
+            line-height: 30px;
+            border-bottom: 1px #ddd solid;
+        }
+        .top_bar{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .location{
+            float: left;
+
+            position: relative;
+        }
+        .shortcut{
+            float: right;
+        }
+        ul{
+            list-style: none;
+        }
+        .shortcut li{
+            float: left;
+        }
+        .top_bar a,
+        .top_bar span,
+        .top_bar i{
+            text-decoration: none;
+            color: #999;
+            font-size: 12px;
+        }
+        .shortcut a:hover{
+            color: red;
+        }
+        .shortcut li.line{
+            background-color: #999;
+            height: 10px;
+            width: 1px;
+            margin: 10px 10px;
+        }
+        .top_bar a.highlight{
+            color: red;
+        }
+        .location .current_city{
+            border:1px solid transparent;
+            padding: 0 10px;
+            z-index: 9999;
+            width: 25px;
+
+            position: absolute;
+        }
+        .location .city_list{
+            width: 320px;
+            height: 436px;
+            background-color: #fff;
+            display: none;
+            border:1px solid rgb(204, 204, 204);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            /* margin-top: -1px; */
+
+            z-index: 999;
+            top: 31px;
+            position: absolute;
+        }
+        .location:hover .current_city{
+            background-color: #fff;
+            color: red;
+            border:1px solid rgb(204, 204, 204);
+            border-bottom: none;
+        }
+
+        .location:hover .city_list{
+            display: block;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top_bar_wapper">
+        <div class="top_bar clearfix" >
+            <div class="location">
+                <div class="current_city">
+                    <a href="javascript:;">北京</a>
+                </div>
+                <div class="city_list">
+
+                </div>
+            </div>
+
+            <ul class="shortcut">
+                <li>
+                    <a href="javascript:;">你好，请登录</a>
+                    <a class = "highlight" href="javascript:;">免费注册</a>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的订单</a>
+                </li>
+
+                <!-- <li class="line"></li>
+                <li>
+                    <a href="javascript:;">我的京东</a>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <a href="javascript:;">京东会员</a>
+                </li> -->
+
+                <li class="line"></li>
+                <li>
+                    <a class="highlight" href="javascript:;">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                    <span>手机京东</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
