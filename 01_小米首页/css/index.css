@@ -126,3 +126,41 @@
     margin-top: 40px;
     margin-left: -55px;
 }
+
+.header{
+    height: 100px;
+}
+
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    /* 搜索引擎使用 */
+    text-indent: -9999px;
+}
+
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/1.jpeg);
+    background-size: cover;
+    left: 0;
+    transition: left 0.3s;
+}
+
+.header .logo .home{
+    left: -55px;
+    background-image: url(../img/3.jpeg);
+}
+
+.header .logo:hover .mi{
+    left: 55px;
+}
+
+.header .logo:hover .home{
+    left: 0;
+}
