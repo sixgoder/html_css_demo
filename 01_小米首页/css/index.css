@@ -32,7 +32,6 @@
     margin-bottom: 14px;
 }
 
-/* .app-wrapper:hover>  */
 .app::after{
     content: '';
     border: 8px solid transparent;
@@ -54,10 +53,6 @@
     height: 148px;
     z-index: 9999;
 }
-
-/* .app-wrapper:hover> .app .qrcode{
-    display: block;
-} */
 
 .app .qrcode span{
     color: #000;
@@ -181,23 +176,60 @@
     padding-left: 58px;
 }
 
-.nav-wrapper li{
+.nav > li{
     float: left;
 }
 
-.nav-wrapper li a{
+.nav > li a{
     font-size: 16px;
     margin-right: 20px;
     color: #424242;
     display: block;
 }
 
-.nav-wrapper li a:hover{
+.nav > li a:hover{
     color: #b0b0b0;
 }
 
 .nav-wrapper .allgoods{
     visibility: hidden;
+}
+
+.nav .left-menu{
+    width: 234px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    left: -113px;
+    line-height: 1;
+    z-index: 999;
+    padding: 20px 0;
+    display: block;
+}
+
+.nav ul.left-menu a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    margin-right: 0;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.nav .left-menu a:hover{
+    background-color: #ff6700;
+}
+
+.nav .left-menu i{
+    float: right;
+    line-height: 42px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.all-goods-wrapper{
+    position: relative;
 }
 
 .nav .goods-info{
