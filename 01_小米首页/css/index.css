@@ -9,6 +9,10 @@
     float: left;
 }
 
+.app{
+    position: relative;
+}
+
 .app .qrcode{
     width: 124px;
     height: 0px;
@@ -26,10 +30,6 @@
     width: 90px;
     margin: 17px;
     margin-bottom: 14px;
-}
-
-.app{
-    position: relative;
 }
 
 /* .app-wrapper:hover>  */
@@ -52,6 +52,7 @@
 .app:hover::after{
     display: block;
     height: 148px;
+    z-index: 9999;
 }
 
 /* .app-wrapper:hover> .app .qrcode{
@@ -99,6 +100,7 @@
 .shop_cart:hover .cart{
     display: block;
     height: 100px;
+    z-index: 9999;
 }
 
 .shop_cart .cart{
@@ -129,6 +131,10 @@
 
 .header{
     height: 100px;
+}
+
+.header-wrapper{
+    position: relative;
 }
 
 .header .logo{
@@ -192,4 +198,23 @@
 
 .nav-wrapper .allgoods{
     visibility: hidden;
+}
+
+.nav .goods-info{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    transition: height 0.3s;
+    z-index: 9999;
+}
+
+.nav .show-goods:hover ~ .goods-info,
+.goods-info:hover{
+    height: 228px;
+    border-top: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .2);
 }
