@@ -164,3 +164,32 @@
 .header .logo:hover .home{
     left: 0;
 }
+
+.header .nav-wrapper{
+    float: left;
+}
+
+.nav-wrapper .nav{
+    height: 100px;
+    line-height: 100px;
+    padding-left: 58px;
+}
+
+.nav-wrapper li{
+    float: left;
+}
+
+.nav-wrapper li a{
+    font-size: 16px;
+    margin-right: 20px;
+    color: #424242;
+    display: block;
+}
+
+.nav-wrapper li a:hover{
+    color: #b0b0b0;
+}
+
+.nav-wrapper .allgoods{
+    visibility: hidden;
+}
