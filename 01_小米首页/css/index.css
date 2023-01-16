@@ -366,11 +366,93 @@
 }
 
 .back-top{
-    background-color: rgba(0, 0, 0, .2);
+    background-color: #ff6700;
     width: 26px;
     height: 206px;
     position: fixed;
     bottom: 100px;
     right: 50%;
     margin-right: -639px;
+}
+
+.ad{
+    height: 170px;
+    margin-top: 14px;
+}
+
+.ad .shotcuts,
+.ad .ad-imgs,
+.ad li{
+    float: left;
+}
+
+.ad .shotcuts{
+    width: 232px;
+    height: 168px;
+    background-color: #424242;
+    margin-right: 14px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.ad .shotcuts a{
+    color: #cfccca;
+    display: block;
+    height: 84px;
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.ad .shotcuts a:hover{
+    color: #fff;
+}
+
+.ad .shotcuts li{
+    position: relative;
+}
+
+.ad .shotcuts li::before{
+    content: '';
+    width: 64px;
+    height: 1px;
+    background-color: #665e67;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.ad .shotcuts li::after{
+    content: '';
+    width: 1px;
+    height: 70px;
+    background-color: #665e67;
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+}
+
+.ad .shotcuts span{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.ad .ad-imgs li{
+    width: 316px;
+    margin-right: 15px;
+}
+
+.ad .ad-imgs li:last-child{
+    margin-right: 0;
+}
+
+.ad .ad-imgs img{
+    width: 100%;
+    vertical-align: top;
 }
