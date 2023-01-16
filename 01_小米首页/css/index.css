@@ -292,3 +292,75 @@
     color: #fff;
     border-color: #ff6700;
 }
+
+.banner{
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.banner .img-list li{
+    position: absolute;
+}
+
+.pointer{
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+
+.pointer a{
+    float: left;
+    width: 6px;
+    height: 6px;
+    border: 2px solid rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+    margin-right: 6px;
+}
+
+.pointer a:hover,
+.pointer a.active{
+    border-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.prev-next a{
+    width: 41px;
+    height: 69px;
+    /* background-color: rgba(255, 255, 255, .4); */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.prev-next .prev{
+    left: 234px;
+}
+
+.prev-next .next{
+    right: 0;
+}
+
+.prev-next a .iconfont{
+    font-size: 20px;
+    color: rgba(0, 0, 0, .6);
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prev-next a:hover{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.prev-next a:hover .iconfont{
+    color: #fff;
+}
