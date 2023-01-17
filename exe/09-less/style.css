@@ -1,0 +1,12 @@
+body {
+  width: 100px;
+  height: 100px;
+}
+body div {
+  background-color: red;
+}
+.box5 {
+  width: 200px;
+  color: #bfa;
+}
+/*# sourceMappingURL=./style.css.map */
