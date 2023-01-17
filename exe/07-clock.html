@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes run {
+            form{
+                transform: rotateZ(0);
+            }
+
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .clock-wrapper{
+            width: 400px;
+            height: 400px;
+            background-color:transparent;
+            margin: 0 auto;
+            margin-top: 80px;
+            border: 4px solid black;
+            border-radius: 50%;
+            position: relative;
+        }
+        .clock-wrapper > div{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .hour-box{
+            width: 70%;
+            height: 70%;
+            /* background-color: transparent; */
+            animation: run 7200s infinite;
+        }
+        .hour{
+            width: 6px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+        }
+        .min-box{
+            width: 80%;
+            height: 80%;
+            /* background-color: transparent */
+            animation: run 600s steps(60) infinite;
+        }
+        .min{
+            width: 4px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+        }
+
+        .sec-box{
+            width: 95%;
+            height: 95%;
+            /* background-color: transparent */
+            animation: run 10s steps(60) infinite;
+        }
+        .sec{
+            width: 2px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-wrapper">
+        <div class="hour-box">
+            <div class="hour"></div>
+        </div>
+        <div class="min-box">
+            <div class="min"></div>
+        </div>
+        <div class="sec-box">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+</html>
